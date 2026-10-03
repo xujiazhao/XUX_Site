@@ -34,13 +34,15 @@ a:hover { color: var(--accent); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .skip-link { position: absolute; top: .5rem; left: 1rem; z-index: 10; padding: .5rem 1rem; background: var(--ink); color: white; transform: translateY(-160%); }
 .skip-link:focus { transform: translateY(0); color: white; }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 104px; border-bottom: 1px solid var(--line); }
+.site-header { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2rem; min-height: 96px; border-bottom: 1px solid var(--line); }
 .wordmark { display: flex; align-items: center; gap: .8rem; text-decoration: none; font-size: 1rem; font-weight: 650; }
-.brand-mark { display: grid; place-items: center; width: 32px; height: 36px; background: var(--accent); color: white; border-radius: 4px; }
+.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; color: var(--accent); border: 1px solid var(--line); border-radius: 8px; }
 .brand-mark .icon { width: 23px; height: 23px; }
-.byline { color: var(--muted); font-size: .75rem; letter-spacing: .06em; margin-left: .3rem; font-weight: 500; }
-.site-header nav { display: flex; gap: 2rem; font-size: .875rem; }
+.site-header nav { display: flex; justify-content: flex-end; gap: 2rem; font-size: .875rem; }
 .site-header nav a { text-decoration: none; padding-block: .6rem; }
+.home-link, .back-to-top { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-height: 44px; font-size: .875rem; text-decoration: none; white-space: nowrap; }
+.home-link .icon { width: 1rem; height: 1rem; transform: rotate(45deg); }
+.site-header > .home-link { padding-left: 2rem; border-left: 1px solid var(--line); }
 h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.035em; font-weight: 700; margin-block: 0 1.1rem; }
 /* Example measurements use the width of each comparison card. */
 .bar-chart { margin-top: 6cqi; display: grid; gap: 3.2cqi; }
@@ -57,7 +59,7 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
 .page-intro > p { max-width: 48rem; }
 .intro-lead { font-size: 1.125rem; line-height: 1.9; }
 .guide-section { padding-top: 0; }
-.section-heading h2 { font-size: clamp(1.65rem, 2.6vw, 2.1rem); line-height: 1.4; letter-spacing: -.035em; margin-top: .8rem; }
+.section-heading h2 { font-size: clamp(1.65rem, 2.6vw, 2.1rem); line-height: 1.4; letter-spacing: -.035em; }
 .guide-steps { list-style: none; padding: 0; margin: 0; }
 .guide-step { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 5rem; padding-block: 2.25rem; border-top: 1px solid var(--line); }
 .guide-step:last-child { padding-bottom: 0; }
@@ -184,10 +186,11 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
 }
 .step-body > .source-note { font-size: .8125rem; color: var(--muted); margin-top: 1rem; }
 .step-body > .rule-note { font-size: .875rem; color: #56594f; padding-left: 1rem; border-left: 2px solid #a4af8e; margin-top: 1.3rem; }
-.faq-section { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 5rem; padding-bottom: 80px; }
-.faq-list { border-top: 1px solid var(--line); }
+.support-section { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 5rem; padding-block: 48px 64px; border-top: 1px solid var(--line); }
+.faq-list { min-width: 0; }
 .faq-list details { border-bottom: 1px solid var(--line); }
 .faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 0; font-weight: 550; list-style: none; }
+.faq-list details:first-child summary { padding-top: 0; }
 .faq-list summary::marker { content: ""; }
 .faq-list summary::-webkit-details-marker { display: none; }
 .faq-list summary .icon { color: var(--muted); width: 1.25rem; height: 1.25rem; }
@@ -196,42 +199,39 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
 .faq-list details[open] .faq-collapse { display: block; color: var(--accent); }
 .faq-list summary:hover { color: var(--accent); }
 .faq-list details p { color: #56594f; padding: 0 2.75rem 1.2rem 0; }
-.checklist-section { background: var(--highlight); }
-.checklist-layout { display: grid; grid-template-columns: 1fr 1.65fr; gap: 5rem; }
-.checklist-intro h2 { font-size: 2rem; line-height: 1.4; letter-spacing: -.035em; }
-.check-progress { font-size: .875rem; color: #4e5741; margin-top: 2.2rem; font-variant-numeric: tabular-nums; }
-.check-progress strong { color: var(--ink); font-size: 2rem; font-weight: 500; }
+.check-progress { font-size: .8125rem; color: var(--muted); margin-top: 1rem; font-variant-numeric: tabular-nums; }
+.check-progress strong { color: var(--ink); font-size: 1rem; font-weight: 600; }
 .checklist { border: 0; padding: 0; margin: 0; min-width: 0; }
 .checklist-group { border: 0; padding: 0; margin: 0; min-width: 0; }
 .checklist-group + .checklist-group { margin-top: 1.75rem; }
-.checklist-group legend { padding: 0 0 .75rem; font-size: .875rem; font-weight: 600; color: #4e5741; }
-.checklist label { display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: start; gap: 1rem; padding-block: 1.05rem; border-bottom: 1px solid #c8cfb4; cursor: pointer; }
-.checklist label:first-of-type { border-top: 1px solid #c8cfb4; }
-.checklist input { grid-area: 1 / 1; appearance: none; margin: .25rem 0 0; width: 20px; height: 20px; border: 1.5px solid #859070; border-radius: 4px; background: transparent; cursor: pointer; }
-.checklist input:checked { background: #3d5028; border-color: #3d5028; }
+.checklist-group legend { padding: 0 0 .75rem; font-size: .875rem; font-weight: 600; color: var(--muted); }
+.checklist label { display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: start; gap: 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); cursor: pointer; }
+.checklist label:first-of-type { border-top: 1px solid var(--line); }
+.checklist label:hover { color: var(--accent); }
+.checklist input { grid-area: 1 / 1; appearance: none; margin: .25rem 0 0; width: 20px; height: 20px; border: 1.5px solid var(--muted); border-radius: 4px; background: transparent; cursor: pointer; }
+.checklist input:checked { background: var(--ink); border-color: var(--ink); }
 .checklist-tick { grid-area: 1 / 1; margin: .375rem 2px 0; width: 16px; height: 16px; color: white; visibility: hidden; pointer-events: none; }
 .checklist input:checked + .checklist-tick { visibility: visible; }
 .checklist label > span { grid-area: 1 / 2; }
-.checklist input:checked ~ span { color: #536044; }
-.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 2rem; font-size: .875rem; }
+.checklist input:checked ~ span { color: var(--muted); }
+.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--line); font-size: .875rem; }
 .site-footer a { text-decoration: none; }
-.site-footer a:last-child { display: inline-flex; align-items: center; gap: .5rem; }
-.site-footer .footer-brand { font-weight: 650; }
+.site-footer nav { display: flex; align-items: center; gap: 2rem; }
+.footer-brand { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; font-weight: 650; }
+.footer-brand .icon { color: var(--muted); }
 
 @media (max-width: 1100px) {
   .wrap { width: calc(100% - 64px); }
-  .guide-step, .faq-section { grid-template-columns: 220px minmax(0, 1fr); gap: 2.5rem; }
+  .guide-step, .support-section { grid-template-columns: 220px minmax(0, 1fr); gap: 2.5rem; }
   .ratio-stage { gap: 1.5rem; flex-wrap: wrap; }
-  .checklist-layout { gap: 3rem; }
 }
 @media (max-width: 760px) {
   .wrap { width: calc(100% - 40px); }
-  .site-header { min-height: 80px; gap: .75rem; flex-wrap: wrap; padding-block: 1rem; }
-  .byline { display: none; }
+  .site-header { grid-template-columns: 1fr auto; gap: .5rem 1rem; padding-top: 1rem; }
   .wordmark { font-size: .9375rem; gap: .6rem; }
-  .site-header nav { gap: 1rem; font-size: .875rem; }
-  .site-header nav a { display: inline-block; }
-  .site-header nav a:first-child { display: none; }
+  .site-header > .home-link { grid-area: 1 / 2; padding-left: 0; border-left: 0; }
+  .site-header nav { grid-area: 2 / 1 / 3 / -1; justify-content: space-between; gap: 1rem; font-size: .875rem; }
+  .site-header nav a { padding-block: .75rem; }
   h1 { font-size: 2rem; }
   .page-intro { padding-block: 36px; }
   .intro-lead { font-size: 1rem; }
@@ -244,11 +244,10 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
   .ratio-stage { justify-content: center; padding: 1.25rem 1rem; gap: 1.25rem; }
   .ratio-frame { height: 80px; }
   .do-dont { gap: 1rem; }
-  .faq-section { grid-template-columns: 1fr; gap: 1.5rem; padding-bottom: 48px; }
-  .checklist-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-  .checklist-intro h2 { font-size: 2rem; }
-  .check-progress { margin-top: 1rem; }
-  .site-footer { flex-wrap: wrap; gap: .6rem 1rem; }
+  .support-section { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 32px 48px; }
+  .check-progress { margin-top: .5rem; }
+  .site-footer { flex-direction: column; align-items: stretch; gap: .5rem; }
+  .site-footer nav { justify-content: space-between; gap: 1rem; }
 }
 @media (max-width: 360px) {
   .wrap { width: calc(100% - 32px); }
@@ -267,12 +266,14 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
   :root { background: white; color: black; }
   body { font-size: 10pt; }
   .wrap { width: 100%; }
-  .site-header nav, .check-progress, .site-footer > a:last-child, .reveal-controls { display: none !important; }
+  .site-header nav, .check-progress, .back-to-top, .reveal-controls { display: none !important; }
   .site-header { min-height: 48px; }
+  .site-header > .home-link { grid-column: 3; }
   .page-intro { padding-block: 24px; }
   h1 { font-size: 24pt; }
   .section-space { padding-block: 28px; }
-  .guide-step, .faq-section { grid-template-columns: 160px minmax(0, 1fr); gap: 24px; }
+  .guide-step, .support-section { grid-template-columns: 160px minmax(0, 1fr); gap: 24px; }
+  .support-section { padding-block: 28px; }
   .guide-step { padding-block: 24px; }
   .step-heading h3 { font-size: 17pt; }
   .ratio-stage, .do-dont, .checklist label, .comparison-item { break-inside: avoid; }
@@ -280,8 +281,6 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
   .example-canvas { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .reveal-points .is-pending { visibility: visible; }
   .reveal-points .is-current { animation: none; }
-  .checklist-layout { gap: 24px; }
-  .checklist-section { background: #f2f2f2; }
   a { text-decoration: none; }
   .site-footer { padding-block: 16px; }
 }

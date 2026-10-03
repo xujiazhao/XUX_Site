@@ -19,8 +19,9 @@
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
     <header class="site-header wrap">
-      <a class="wordmark" href="#" aria-label="PPT 指南首页"><span class="brand-mark" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#presentation"></use></svg></span><span>PPT 指南<span class="byline"> / BY XUX</span></span></a>
+      <a class="wordmark" href="#" aria-label="PPT 指南首页"><span class="brand-mark" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#presentation"></use></svg></span><span>PPT 指南</span></a>
       <nav aria-label="主导航"><a href="#guide">呈现步骤</a><a href="#faq">常见问题</a><a href="#checklist">行前检查</a></nav>
+      <a class="home-link" href="https://www.xux.ai/">XUX 首页<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#arrow-up"></use></svg></a>
     </header>
 
     <main id="main">
@@ -325,7 +326,7 @@
         </ol>
       </section>
 
-      <section class="faq-section wrap" id="faq" aria-labelledby="faq-title">
+      <section class="support-section wrap" id="faq" aria-labelledby="faq-title">
         <div class="section-heading"><h2 id="faq-title">常见问题</h2></div>
         <div class="faq-list">
           <details><summary><span>列表超过 6 项就不行吗？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>不是硬上限，只是提醒你检查。关键看每项多长、多难懂。米勒定律讲的是短时记忆和分块，没规定一页几项。</p></details>
@@ -336,27 +337,31 @@
         </div>
       </section>
 
-      <section class="checklist-section section-space" id="checklist" aria-labelledby="checklist-title">
-        <div class="wrap checklist-layout">
-          <div class="checklist-intro"><h2 id="checklist-title">行前检查</h2><p class="check-progress" data-progress hidden aria-live="polite" aria-atomic="true"><strong id="check-count">0</strong> / <span id="check-total">9</span> 项已检查</p></div>
-          <div class="checklist" role="group" aria-label="PPT 行前检查清单">
-            <fieldset class="checklist-group"><legend>内容</legend>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>幻灯片尺寸按现场屏幕设置</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>屏上只有要点，解释靠讲</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>有结论的页，标题就是结论</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>一页只讲一件事</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>配图切题，示意图已注明</span></label>
-            </fieldset>
-            <fieldset class="checklist-group"><legend>版式</legend>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>相关内容成组，同级样式一致，文字对齐</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>在最后一排也看得清</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>不只靠颜色传达信息</span></label>
-              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>讲到哪，就突出哪</span></label>
-            </fieldset>
-          </div>
+      <section class="support-section wrap" id="checklist" aria-labelledby="checklist-title">
+        <div class="section-heading"><h2 id="checklist-title">行前检查</h2><p class="check-progress" data-progress hidden aria-live="polite" aria-atomic="true"><strong id="check-count">0</strong> / <span id="check-total">9</span> 项已检查</p></div>
+        <div class="checklist" role="group" aria-label="PPT 行前检查清单">
+          <fieldset class="checklist-group"><legend>内容</legend>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>幻灯片尺寸按现场屏幕设置</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>屏上只有要点，解释靠讲</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>有结论的页，标题就是结论</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>一页只讲一件事</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>配图切题，示意图已注明</span></label>
+          </fieldset>
+          <fieldset class="checklist-group"><legend>版式</legend>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>相关内容成组，同级样式一致，文字对齐</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>在最后一排也看得清</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>不只靠颜色传达信息</span></label>
+            <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>讲到哪，就突出哪</span></label>
+          </fieldset>
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><a class="footer-brand" href="https://www.xux.ai/zh">许嘉昭 XUX</a><a href="#">回到顶部<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#arrow-up"></use></svg></a></footer>
+    <footer class="site-footer wrap">
+      <a class="footer-brand" href="#"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#presentation"></use></svg>PPT 指南</a>
+      <nav aria-label="页尾导航">
+        <a class="home-link" href="https://www.xux.ai/">XUX 首页<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#arrow-up"></use></svg></a>
+        <a class="back-to-top" href="#">回到顶部<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#arrow-up"></use></svg></a>
+      </nav>
+    </footer>
   </body>
 </html>
