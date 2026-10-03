@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f6f3" />
+    <title>PPT 呈现指南 · XUX</title>
+    <meta name="description" content="从屏幕比例到字体配色，用七个步骤和直观对比，把演讲 PPT 做得清楚易读。附常见问题和行前检查清单。" />
+    <link rel="canonical" href="https://ppt.xux.ai/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="PPT 呈现指南 · XUX" />
+    <meta property="og:description" content="让观众看得清，也跟得上。七个步骤，帮你做好演讲 PPT 的呈现。" />
+    <meta property="og:url" content="https://ppt.xux.ai/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/guide.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#" aria-label="PPT 指南首页"><span class="brand-mark" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#presentation"></use></svg></span><span>PPT 指南<span class="byline"> / BY XUX</span></span></a>
+      <nav aria-label="主导航"><a href="#guide">呈现步骤</a><a href="#faq">常见问题</a><a href="#checklist">行前检查</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="page-intro wrap" aria-labelledby="intro-title">
+        <h1 id="intro-title">PPT 呈现指南</h1>
+        <p class="intro-lead">这份指南帮你把演讲 PPT 做得更清楚：每页放多少内容，图片怎么选，文字怎么排。准备好讲稿或提纲后，按下面七步检查，让观众看得清，也跟得上。</p>
+      </section>
+
+      <section class="guide-section wrap section-space" id="guide" aria-labelledby="guide-title">
+        <h2 id="guide-title" class="sr-only">呈现的七个步骤</h2>
+        <ol class="guide-steps" role="list">
+          <li role="listitem" class="guide-step" id="screen">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">01</span><h3>先确认屏幕比例</h3></div>
+            <div class="step-body">
+              <p>先问清楚场地的屏幕比例、分辨率和播放设备，再设置幻灯片尺寸。无论是 4:3、16:9，还是特殊尺寸，都以现场屏幕为准。</p>
+              <div class="ratio-stage" role="img" aria-label="标准 4:3 与宽屏 16:9 的比例对比">
+                <div class="ratio-frame ratio-standard">4:3</div><div class="ratio-frame ratio-wide">16:9</div>
+              </div>
+              <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>保留原比例，圆和方块都不变形。</figcaption>
+                  <div class="example-canvas ratio-demo" role="img" aria-label="4:3 画面等比放到 16:9 屏幕上，两侧留下黑边，圆仍是圆，方块仍是正方形。"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false"><rect width="400" height="300" fill="#f3f4ed"/><text x="200" y="55" text-anchor="middle" fill="#56594f" font-size="22">原始 4:3 画面</text><circle cx="125" cy="166" r="57" fill="#d8decb" stroke="#7b8270" stroke-width="3"/><rect x="232" y="109" width="114" height="114" fill="#d8decb" stroke="#7b8270" stroke-width="3"/></svg></div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>把 4:3 硬拉成 16:9，形状也变了。</figcaption>
+                  <div class="example-canvas ratio-demo" role="img" aria-label="同一张 4:3 画面强行拉满 16:9 屏幕，圆被横向拉成椭圆，正方形变成长方形。"><svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect width="400" height="300" fill="#f3f4ed"/><text x="200" y="55" text-anchor="middle" fill="#56594f" font-size="22">原始 4:3 画面</text><circle cx="125" cy="166" r="57" fill="#d8decb" stroke="#7b8270" stroke-width="3"/><rect x="232" y="109" width="114" height="114" fill="#d8decb" stroke="#7b8270" stroke-width="3"/></svg></div>
+                </figure>
+              </div>
+              <p class="rule-note">尺寸不合时，优先重新排版。来不及调整，宁可等比显示、留下黑边，也别把画面拉变形。</p>
+              <p class="source-note"><a href="https://support.microsoft.com/en-us/powerpoint/change-the-size-of-your-powerpoint-slides">PowerPoint 尺寸说明</a></p>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="script">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">02</span><h3>想清楚，什么需要上屏</h3></div>
+            <div class="step-body">
+              <p>沿着讲稿，挑出观众需要看到的要点、图片和数字。详细解释由你来讲，给自己的提示放在备注里。</p>
+              <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>只列几个要点，细节讲出来。</figcaption>
+                  <div class="example-canvas script-example script-bullets">
+                    <h4>上台前，确认这三件事</h4>
+                    <ul><li>屏幕比例合适</li><li>后排看得清楚</li><li>播放设备试过了</li></ul>
+                  </div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>把整段稿子搬上屏幕，让观众读。</figcaption>
+                  <div class="example-canvas script-example script-manuscript">
+                    <h4>上台前，确认这三件事</h4>
+                    <p>上台前，有三件事需要确认。先问清楚场地的屏幕比例，把幻灯片尺寸设好，免得临时拉伸。接着，到最后一排看看，文字和图表是不是还看得清楚。最后，用现场的播放设备从头试一遍，确认字体没有变，音视频能正常播放，翻页也没有问题。</p>
+                  </div>
+                </figure>
+              </div>
+              <section class="example-group title-guideline" aria-labelledby="conclusion-title">
+                <div class="example-heading"><h4 id="conclusion-title">把结论写进标题</h4></div>
+                <p class="example-guidance">有明确结论，就把它写进标题，让观众一眼知道这页要说明什么。图表和数据要能支撑这个结论。</p>
+                <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>标题先说结论，观众更容易跟上。</figcaption>
+                  <div class="example-canvas focus-example title-example">
+                    <h4>试点转化率提升 8 个百分点</h4>
+                    <div class="bar-chart" role="img" aria-label="虚构数据：基线转化率 24%，试点转化率 32%，相差 8 个百分点。">
+                      <div class="bar-row"><span>基线</span><div class="bar-track"><span class="bar baseline"></span></div><strong>24%</strong></div>
+                      <div class="bar-row"><span>试点</span><div class="bar-track"><span class="bar pilot"></span></div><strong>32%</strong></div>
+                    </div>
+                  </div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>只有一个主题，重点还得自己找。</figcaption>
+                  <div class="example-canvas focus-example title-example">
+                    <h4>转化率数据</h4>
+                    <div class="bar-chart" role="img" aria-label="虚构数据：基线转化率 24%，试点转化率 32%，相差 8 个百分点。">
+                      <div class="bar-row"><span>基线</span><div class="bar-track"><span class="bar baseline"></span></div><strong>24%</strong></div>
+                      <div class="bar-row"><span>试点</span><div class="bar-track"><span class="bar pilot"></span></div><strong>32%</strong></div>
+                    </div>
+                  </div>
+                </figure>
+                </div>
+                <p class="example-guidance example-data-note">虚构数据：32% − 24% = 8 个百分点，不是增长 8%。</p>
+              </section>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="pacing">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">03</span><h3>内容多，就分几页讲</h3></div>
+            <div class="step-body">
+              <p>每页只放眼下要讲的内容。话题变了，就换一页；一张图太复杂，可以先展示全貌，再放大细节。</p>
+              <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>跟着讲述分几页，一次看一件事。</figcaption>
+                  <div class="example-canvas density-split" role="img" aria-label="将问题、原因、方案拆成三页：第一页只呈现问题，后两页依次讲原因和方案。">
+                    <div class="stack-page stack-third"><span>03</span>方案</div>
+                    <div class="stack-page stack-second"><span>02</span>原因</div>
+                    <div class="stack-page stack-first"><span>01 / 问题</span><b>等待时间过长</b><div class="example-lines" aria-hidden="true"><i></i><i></i></div></div>
+                  </div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>内容塞不下，就一直缩小字号。</figcaption>
+                  <div class="example-canvas density-packed" role="img" aria-label="同一页塞满问题、原因、方案的长段落、十二条列表、执行计划表和备注，所有正文被缩到很小。">
+                    <div class="packed-page"><b>问题、原因、方案与执行计划</b>
+                      <div class="packed-columns">
+                        <div><b>问题：等待时间过长</b><p>提交之后，需要反复询问下一步由谁处理。进度分散在不同消息里，同一份材料经常要重新解释。参与的人越多，确认环节越长，最后很难知道到底卡在哪里。</p><ul><li>入口分散，来回转交</li><li>缺少明确的处理顺序</li><li>进度需要逐个询问</li><li>相同材料多次提交</li></ul></div>
+                        <div><b>原因：重复确认</b><p>每个环节都单独收集信息，却没有统一的检查标准。前一步确认过的内容，后一步还要再问。资料缺失时只能退回重来，处理记录又没有集中保存。</p><ul><li>信息没有一次收齐</li><li>责任范围不够清楚</li><li>交接时缺少上下文</li><li>异常处理依赖口头沟通</li></ul></div>
+                        <div><b>方案：合并步骤</b><p>把重复的确认合并，在同一个入口提交材料。明确每一步的负责人和完成条件，让所有人看到当前进度。先选一个流程试行，再根据反馈调整细节。</p><ul><li>统一入口与材料清单</li><li>写清负责人和截止时间</li><li>保留完整的处理记录</li><li>先试行，再逐步扩大</li></ul></div>
+                      </div>
+                      <table><thead><tr><th>事项</th><th>负责人</th><th>时间</th><th>当前状态</th></tr></thead><tbody><tr><td>梳理所有入口</td><td>项目组</td><td>本周</td><td>待确认</td></tr><tr><td>整理材料清单</td><td>业务组</td><td>下周</td><td>待评审</td></tr><tr><td>选择试行流程</td><td>协作组</td><td>下周</td><td>待安排</td></tr></tbody></table>
+                      <p class="packed-footnote">补充：访谈记录、流程细节、异常场景和执行计划也都放在这一页。所有事项需逐条说明，相关资料见附件。示意内容。</p>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <p class="rule-note">列表超过 6 项时，先看看能不能分组或拆页。</p>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="images">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">04</span><h3>一图胜千言，<br />前提是图说得对。</h3></div>
+            <div class="step-body">
+              <p>配图要和讲述对得上，对象、场景和比例都要准确；示意图也要标明。<strong>每张图都要帮观众理解内容，不必为了填满空白而加装饰。</strong></p>
+              <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>把要讲的问题直接指出来。</figcaption>
+                  <div class="example-canvas image-example" role="img" aria-label="配图示例：标题为接头没有插到底，下面用接头示意图标出插头与接口之间的间隙。">
+                    <b>接头没有插到底</b>
+                    <svg viewBox="0 0 280 130" aria-hidden="true" focusable="false"><rect x="166" y="30" width="82" height="66" rx="6" fill="#e8ebdf" stroke="#7b8270" stroke-width="2"/><path d="M134 52h48v8h-48zm0 20h48v8h-48z" fill="#8b9380"/><path d="M16 65h58" stroke="#7b8270" stroke-width="10"/><rect x="70" y="40" width="64" height="50" rx="5" fill="#e8ebdf" stroke="#7b8270" stroke-width="2"/><path d="M137 23h26m-22-4-4 4 4 4m18-8 4 4-4 4M150 29v13" fill="none" stroke="#ad3718" stroke-width="2"/><text x="150" y="14" text-anchor="middle" fill="#ad3718" font-size="12">间隙</text><text x="102" y="115" text-anchor="middle" fill="#62655c" font-size="12">插头</text><text x="208" y="115" text-anchor="middle" fill="#62655c" font-size="12">接口</text></svg>
+                    <span class="example-note">示意图</span>
+                  </div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>讲的是接头，放的却是风景。</figcaption>
+                  <div class="example-canvas image-example" role="img" aria-label="错误配图示例：同样讲接头没有插到底，却放了一张与接头无关的山水风景图。">
+                    <b>接头没有插到底</b>
+                    <svg viewBox="0 0 280 130" aria-hidden="true" focusable="false"><rect x="16" y="7" width="248" height="116" rx="3" fill="#eef0e7"/><circle cx="214" cy="34" r="14" fill="#d7be83"/><path d="m16 101 66-70 77 85H16z" fill="#b4bda4"/><path d="m96 123 83-75 85 62v13z" fill="#8d9b7d"/><path d="M16 107q71-14 128 6t120-5v15H16z" fill="#d2daca"/></svg>
+                    <span class="example-note">与讲述无关</span>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="principles">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">05</span><h3>用排版理清关系</h3></div>
+            <div class="step-body">
+              <section class="example-group" aria-label="相关的内容放在一起">
+                <div class="example-heading"><h4>相关的内容放在一起</h4><a href="https://lawsofux.com/law-of-proximity/">接近律</a></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>组内靠近，组与组之间留些空隙。</figcaption>
+                    <div class="example-canvas grouping-good" role="img" aria-label="清晰分组：调研一组包含访谈、观察、记录，交付一组包含发现、建议、行动。组间留出明显间距。"><div><b>调研</b><span>访谈</span><span>观察</span><span>记录</span></div><div><b>交付</b><span>发现</span><span>建议</span><span>行动</span></div></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>内容混在一起，加框也分不清。</figcaption>
+                    <div class="example-canvas grouping-bad" role="img" aria-label="混乱分组：调研和交付的六个项目混排，每个项目都加粗加框，无法看出所属关系。"><b>调研 / 交付</b><div><span>访谈</span><span>建议</span><span>记录</span><span>行动</span><span>观察</span><span>发现</span></div></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="同类内容用同一种样式">
+                <div class="example-heading"><h4>同类内容用同一种样式</h4><a href="https://lawsofux.com/law-of-similarity/">相似律</a></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>同一级别的内容，看起来也一致。</figcaption>
+                    <div class="example-canvas consistency-example consistency-good" role="img" aria-label="收集、分析、输出三个同级步骤，使用相同的形状、颜色和字号。"><span>收集</span><span>分析</span><span>输出</span></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>每个元素都换一种颜色和形状。</figcaption>
+                    <div class="example-canvas consistency-example consistency-bad" role="img" aria-label="同样的收集、分析、输出三个步骤，分别用圆形、细边框和深色大字，造成不必要的区别。"><span>收集</span><span>分析</span><span>输出</span></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="让重点更突出">
+                <div class="example-heading"><h4>让重点更突出</h4><a href="https://lawsofux.com/von-restorff-effect/">孤立效应</a></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>让人先看到重点，再读补充说明。</figcaption>
+                    <div class="example-canvas hierarchy-example hierarchy-good" role="img" aria-label="年度回顾为小标签，客户留存为主要大标题，先看变化再看原因为次要说明。"><span>年度回顾</span><b>客户留存</b><p>先看变化，再看原因。</p></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>每句话都放大加粗，分不出主次。</figcaption>
+                    <div class="example-canvas hierarchy-example hierarchy-bad" role="img" aria-label="同样的年度回顾、客户留存、先看变化再看原因全部大号加粗，没有主次。"><span>年度回顾</span><b>客户留存</b><p>先看变化，再看原因。</p></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="把文字对齐">
+                <div class="example-heading"><h4>把文字对齐</h4></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>标题和正文对齐，读起来更顺。</figcaption>
+                    <div class="example-canvas alignment-example alignment-good" role="img" aria-label="项目进度标题和三行状态都左对齐，状态与事项各自成列，便于顺序阅读。"><b>项目进度</b><div><span>已完成</span><span>访谈</span></div><div><span>进行中</span><span>分析</span></div><div><span>下一步</span><span>验证</span></div></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>每行各放各的，视线来回跳。</figcaption>
+                    <div class="example-canvas alignment-example alignment-bad" role="img" aria-label="相同的项目进度标题和三行状态，分别在右侧、左侧、中间和右侧，文字起点不一致。"><b>项目进度</b><div><span>已完成</span><span>访谈</span></div><div><span>进行中</span><span>分析</span></div><div><span>下一步</span><span>验证</span></div></div>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="elements">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">06</span><h3>选好字体和颜色</h3></div>
+            <div class="step-body">
+              <section class="example-group" aria-label="先选容易看清的字体">
+                <div class="example-heading"><h4>先选容易看清的字体</h4></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>正文用笔画清楚的无衬线字体。</figcaption>
+                    <div class="example-canvas font-example font-good" role="img" aria-label="字形示例：用常规无衬线字呈现清楚的文字更容易读，笔画和间距自然。"><span>清楚的文字，<br />更容易读。</span></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>用倾斜、变形的字来装饰正文。</figcaption>
+                    <div class="example-canvas font-example font-bad" role="img" aria-label="同样的文字改用倾斜、压窄的装饰字形，增加阅读负担。"><span>清楚的文字，<br />更容易读。</span></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="字号让后排也看得清">
+                <div class="example-heading"><h4>字号让后排也看得清</h4></div>
+                <p class="example-guidance">即使字号相同，幻灯片尺寸、屏幕大小和观看距离不同，读起来也不一样。用实际播放设备放一页，走到最后一排，看看正文、图注和数据标签能不能看清。</p>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>少放一点内容，把字放大。</figcaption>
+                    <div class="example-canvas type-example type-large" role="img" aria-label="字号示例：深色背景上用大号白字写着让最后一排也看得清。"><span>让最后一排，<br />也看得清。</span></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>内容越加越多，字越缩越小。</figcaption>
+                    <div class="example-canvas type-example type-small" role="img" aria-label="同样的深色背景和白色文字，只把字号缩小，远处难以辨认。"><span>让最后一排，<br />也看得清。</span></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="文字和背景拉开明暗">
+                <div class="example-heading"><h4>文字和背景拉开明暗</h4></div>
+                <p class="example-guidance">演讲时，我更偏爱深色背景，重点容易显出来。不过，还是要看现场光线，确保观众读得清楚。</p>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>让文字从背景里清楚地显出来。</figcaption>
+                    <div class="example-canvas type-example contrast-good" role="img" aria-label="对比度示例：深色背景上使用明亮的大字，写着关键变化一眼看清。"><span>关键变化，<br />一眼看清。</span></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>字够大，却和背景混成一片。</figcaption>
+                    <div class="example-canvas type-example contrast-bad" role="img" aria-label="保持同样的字号和深色背景，把文字改为暗灰色，字与背景的明暗差别不足。"><span>关键变化，<br />一眼看清。</span></div>
+                  </figure>
+                </div>
+              </section>
+              <section class="example-group" aria-label="别只靠颜色区分">
+                <div class="example-heading"><h4>别只靠颜色区分</h4></div>
+                <div class="do-dont comparison">
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>加上文字或符号，看不清颜色也懂。</figcaption>
+                    <div class="example-canvas status-example status-good" role="img" aria-label="资料准备一行用绿色勾号和已完成文字标识；设备测试一行用红色警示图标和待处理文字标识。"><div><span>资料准备</span><b class="status-done"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>已完成</b></div><div><span>设备测试</span><b class="status-pending"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#circle-alert"></use></svg>待处理</b></div></div>
+                  </figure>
+                  <figure class="comparison-item">
+                    <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>只放红绿圆点，让观众猜意思。</figcaption>
+                    <div class="example-canvas status-example status-bad" role="img" aria-label="同样两行资料准备和设备测试，只显示绿色和红色圆点，没有文字或符号解释。"><div><span>资料准备</span><i class="status-dot status-done"></i></div><div><span>设备测试</span><i class="status-dot status-pending"></i></div></div>
+                  </figure>
+                </div>
+              </section>
+              <p class="source-note"><a href="https://support.microsoft.com/en-us/accessibility/powerpoint/make-your-powerpoint-presentations-accessible-to-people-with-disabilities">Microsoft 无障碍指南</a> · <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">对比度参考</a></p>
+            </div>
+          </li>
+          <li role="listitem" class="guide-step" id="attention">
+            <div class="step-heading"><span class="step-number" aria-hidden="true">07</span><h3>让画面跟上讲述</h3></div>
+            <div class="step-body">
+              <p>讲到哪里，就让哪里更醒目。还没讲到的内容可以稍后出现，让观众的视线跟着你走。</p>
+              <div class="do-dont comparison">
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg>DO</strong>讲到试点，就把试点数据亮出来。</figcaption>
+                  <div class="example-canvas focus-example">
+                    <h4>基线与试点转化率</h4>
+                    <div class="bar-chart" role="img" aria-label="虚构数据：基线转化率 24%，试点转化率 32%。只突出试点数据。">
+                      <div class="bar-row"><span>基线</span><div class="bar-track"><span class="bar baseline"></span></div><strong>24%</strong></div>
+                      <div class="bar-row"><span>试点</span><div class="bar-track"><span class="bar pilot"></span></div><strong>32%</strong></div>
+                    </div>
+                  </div>
+                </figure>
+                <figure class="comparison-item">
+                  <figcaption><strong class="compare-label"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg>DON’T</strong>处处都在强调，反而找不到重点。</figcaption>
+                  <div class="example-canvas focus-example focus-bad">
+                    <h4>基线与试点转化率</h4>
+                    <div class="bar-chart" role="img" aria-label="同一组虚构数据：基线转化率 24%，试点转化率 32%。标题、数字和两条柱形全部被强调。">
+                      <div class="bar-row"><span>基线</span><div class="bar-track"><span class="bar baseline"></span></div><strong>24%</strong></div>
+                      <div class="bar-row"><span>试点</span><div class="bar-track"><span class="bar pilot"></span></div><strong>32%</strong></div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <p class="source-note">数据为演示所用，不代表实际结果。</p>
+              <section class="example-group reveal-guideline" aria-labelledby="reveal-title">
+                <div class="example-heading"><h4 id="reveal-title">需要逐点解释，就逐步出现</h4></div>
+                <p class="example-guidance">先讲问题，再讲原因，最后讲方案。点击“下一步”，看看画面如何配合这段讲述；能一眼看完的简单清单，不必加动画。</p>
+                <div class="reveal-demo">
+                  <div class="example-canvas reveal-slide" id="progressive-slide">
+                    <h4>把等待时间降下来</h4>
+                    <ol class="reveal-points">
+                      <li data-reveal-item><span>01</span><div><b>发现问题</b><p>哪一步等待最久？</p></div></li>
+                      <li data-reveal-item><span>02</span><div><b>查清原因</b><p>为什么卡在这里？</p></div></li>
+                      <li data-reveal-item><span>03</span><div><b>验证方案</b><p>调整后，等待有没有变短？</p></div></li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="reveal-controls" data-reveal-controls hidden>
+                  <p id="reveal-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button type="button" id="reveal-next" aria-controls="progressive-slide">下一步</button>
+                </div>
+                <noscript><p class="example-guidance">三个步骤按讲述顺序排列；开启 JavaScript 可体验逐步出现。</p></noscript>
+              </section>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="faq-section wrap" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading"><h2 id="faq-title">常见问题</h2></div>
+        <div class="faq-list">
+          <details><summary><span>列表超过 6 项就不行吗？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>6 项只是提醒你检查页面是不是太满，并不是硬性上限。要看每项有多长、多难理解，以及观众有多少时间看。Miller’s Law 谈的是把信息分组，并没有规定一页只能放几个元素。</p></details>
+          <details><summary><span>一页停留多久比较合适？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>没有统一答案。一句重点可以很快带过，复杂图表就多留一点时间。跟着讲述换页，再完整彩排一遍，看看观众是否来得及读完。</p></details>
+          <details><summary><span>动画到底要不要用？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>能帮观众跟上，就用。比如分步展示流程、指出变化，或解释物体怎么运动。简单出现或淡入通常就够了；飞入、旋转和循环动画，如果不帮助理解，就去掉。</p></details>
+          <details><summary><span>公司模板或固定表格不能改，怎么办？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>保留必须保留的部分，把能调整的字号、间距和重点做好。表格太密时，可以先看全貌，再放大要讲的局部，并保留行列标题，让观众知道自己在看哪里。</p></details>
+          <details><summary><span>一定不能用衬线字体吗？</span><svg class="icon faq-expand" aria-hidden="true" focusable="false"><use href="/icons.svg#plus"></use></svg><svg class="icon faq-collapse" aria-hidden="true" focusable="false"><use href="/icons.svg#x"></use></svg></summary><p>不是。正文用清晰的无衬线字体通常更省心，但衬线字体也可以用。关键是站远了能不能看清，以及换到播放电脑后会不会变样。</p></details>
+        </div>
+      </section>
+
+      <section class="checklist-section section-space" id="checklist" aria-labelledby="checklist-title">
+        <div class="wrap checklist-layout">
+          <div class="checklist-intro"><h2 id="checklist-title">行前检查</h2><p class="check-progress" data-progress hidden aria-live="polite" aria-atomic="true"><strong id="check-count">0</strong> / <span id="check-total">10</span> 项已检查</p></div>
+          <div class="checklist" role="group" aria-label="PPT 行前检查清单">
+            <fieldset class="checklist-group"><legend>文件和画面</legend>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>屏幕比例已确认，四周留了余量，不会裁掉重要内容</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>站远一点，文字和图表依然看得清</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>图片用对了，数据核实过，来源和单位也标清了</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>需要的字幕和替代文本已补好，阅读顺序也检查过</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>最终版 PPT、PDF 和音视频素材都已备份，断网也能找到</span></label>
+            </fieldset>
+            <fieldset class="checklist-group"><legend>设备和彩排</legend>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>在播放电脑上试过，字体、音视频和翻页都正常</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>需要的电脑、电源、转接线和翻页器已备齐，接口能对上</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>演讲者视图已试过，观众看不到我的备注</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>通知已静音，放映时不会自动休眠</span></label>
+              <label><input type="checkbox" /><svg class="icon checklist-tick" aria-hidden="true" focusable="false"><use href="/icons.svg#check"></use></svg><span>完整讲过一遍，时长合适，翻页和动画跟得上</span></label>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap"><a class="footer-brand" href="https://www.xux.ai/zh">许嘉昭 XUX</a><a href="#">回到顶部<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#arrow-up"></use></svg></a></footer>
+  </body>
+</html>
