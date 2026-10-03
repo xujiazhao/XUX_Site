@@ -80,6 +80,17 @@ All content must be maintained in both `en/` and `zh/` directories. Keep frontma
 
 Push to `main` branch to trigger automatic deployment.
 
+### PPT guide — ppt.xux.ai
+
+The standalone presentation guide lives in `sites/ppt/public`. Deploy it as a
+separate Vercel project with **Root Directory** set to `sites/ppt`; its
+`vercel.json` publishes the static `public` directory without installing or
+building dependencies. The personal site's Next.js deployment remains at the
+repository root.
+
+See [PPT deployment and DNS setup](docs/ppt-deployment.md) for Cloudflare records,
+Vercel settings, and local preview instructions.
+
 ## License
 
 All rights reserved. © Jiazhao Xu
