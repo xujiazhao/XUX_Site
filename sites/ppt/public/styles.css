@@ -107,10 +107,9 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.3; letter-spacing: -.
 .packed-page table { width: 100%; border-collapse: collapse; font-size: 1.4cqi; text-align: left; }
 .packed-page th, .packed-page td { border: 1px solid #dcded5; padding: .4cqi .6cqi; }
 .packed-footnote { font-size: 1.25cqi; margin-top: .8cqi; }
-.image-example { display: flex; flex-direction: column; padding: 4cqi 5cqi 2.6cqi; }
+.image-example { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 2cqi; padding: 4cqi; }
 .image-example > b { font-weight: 550; }
-.image-example svg { display: block; width: 100%; height: 34.5cqi; flex-shrink: 0; margin-top: 2cqi; }
-.example-note { color: var(--muted); font-size: 2.75cqi; margin-top: auto; }
+.image-example img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: cover; object-position: center 65%; }
 .grouping-good { display: grid; grid-template-columns: 1fr 1fr; gap: 8cqi; align-content: center; }
 .grouping-good b { display: block; padding-bottom: 2.6cqi; margin-bottom: 2cqi; border-bottom: 1px solid var(--line); font-weight: 600; }
 .grouping-good span { display: block; color: #56594f; line-height: 1.85; }
