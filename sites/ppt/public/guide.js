@@ -37,3 +37,27 @@ revealNext.addEventListener("click", () => {
 });
 updateReveal();
 revealControls.hidden = false;
+
+const outlineLinks = [...document.querySelectorAll(".page-outline a")];
+const outlineSections = outlineLinks.map((link) => document.querySelector(link.hash));
+let outlineFrame = null;
+
+function updateOutline() {
+  const readingLine = window.innerHeight * 0.3;
+  const atEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  const active = atEnd ? outlineSections.length - 1 : outlineSections.findLastIndex((section) => section.getBoundingClientRect().top <= readingLine);
+  outlineLinks.forEach((link, index) => {
+    if (index === active) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+  outlineFrame = null;
+}
+
+function scheduleOutline() {
+  if (outlineFrame === null) outlineFrame = requestAnimationFrame(updateOutline);
+}
+
+window.addEventListener("scroll", scheduleOutline, { passive: true });
+window.addEventListener("resize", scheduleOutline);
+window.addEventListener("pageshow", scheduleOutline);
+scheduleOutline();
