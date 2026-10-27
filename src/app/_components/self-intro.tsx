@@ -108,29 +108,21 @@ export function SelfIntro({ lang }: Props) {
           </span>
         </p>
         <div className="text-lg leading-relaxed mb-4">
-          {isEn ? (
-            <>
-              <p className="mb-4">
-                I’m Jiazhao Xu (许嘉昭), an AI product designer and builder. I combine product strategy, UX/UI design, prototyping, and front-end development to turn ideas into working products. My full-stack approach connects design decisions with implementation and business outcomes.
-              </p>
-              <p className="mb-4">
-                I’m currently a Product Manager for Medeo at <Link href="/en/experience/one2x" className="animated-weight-link underline">ONE2X</Link>, working on AI video creation. I graduated from <Link href="/en/experience/artcenter-college-of-design" className="animated-weight-link underline">ArtCenter College of Design</Link> and have worked at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>. I am also an entrepreneur, <Link href="/en/experience/insead-business-school" className="animated-weight-link underline">educator</Link>, and <Link href="/en/creation/ppt-expert" className="animated-weight-link underline">PPT expert</Link>.
-              </p>
-            </>
-          ) : (
-            <>
-              <p className="mb-4">
-                我是许嘉昭（Jiazhao Xu），一名 AI 产品设计师与开发者。我结合产品策略、UX/UI 设计、交互原型与前端开发，把想法做成可用的产品。对我来说，全栈意味着贯通设计、实现与商业价值。
-              </p>
-              <p className="mb-4">
-                我目前在<Link href="/zh/experience/one2x" className="animated-weight-link underline">ONE2X</Link>担任 Medeo 产品经理，探索 AI 视频创作。我本科毕业于<Link href="/zh/experience/artcenter-college-of-design" className="animated-weight-link underline">艺术中心设计学院</Link>，曾在<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>工作。我同时也是一名创业者、<Link href="/zh/experience/insead-business-school" className="animated-weight-link underline">教育者</Link>和<Link href="/zh/creation/ppt-expert" className="animated-weight-link underline">PPT专家</Link>。
-              </p>
-            </>
-          )}
+          <p className="mb-4">
+            {isEn ? (
+              <>
+                I design and build AI products, from product strategy and UX/UI to prototypes and front-end development. I’m currently a Product Manager for Medeo at <Link href="/en/experience/one2x" className="animated-weight-link underline">ONE2X</Link>, with previous experience at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>.
+              </>
+            ) : (
+              <>
+                我是一名 AI 产品设计师与开发者，擅长从产品策略、UX/UI 到原型与前端实现。目前在<Link href="/zh/experience/one2x" className="animated-weight-link underline">ONE2X</Link>担任 Medeo 产品经理，曾就职于<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>。
+              </>
+            )}
+          </p>
           <p className="mb-4">
             {isEn
-              ? "Open to part-time projects, startup partnerships, and product collaborations — especially AI product design, UX/UI, and prototypes that bring an idea to life."
-              : "欢迎兼职项目、创业伙伴与产品合作，尤其是 AI 产品设计、UX/UI，以及将想法落地的原型开发。"}{" "}
+              ? "Have an AI product idea or need a design and prototyping partner? I’m open to part-time collaborations and exploring new ventures together."
+              : "如果你有 AI 产品想法，或正在寻找设计与原型开发伙伴，欢迎洽谈兼职合作，也期待一起探索创业机会。"}{" "}
             <a href="mailto:hello@xujiazhao.com" className="animated-weight-link underline">
               {isEn ? "Let’s talk." : "联系我聊聊。"}
             </a>
