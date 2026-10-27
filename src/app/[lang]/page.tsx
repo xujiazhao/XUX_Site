@@ -11,8 +11,7 @@ import { RiBriefcaseLine } from "react-icons/ri";
 import {
   SITE_DESCRIPTION_EN,
   SITE_DESCRIPTION_ZH,
-  SITE_NAME_EN,
-  SITE_NAME_ZH,
+  CMS_NAME,
   SITE_URL,
 } from "@/lib/constants";
 
@@ -26,7 +25,6 @@ export default async function Index({ params }: { params: Promise<{ lang: string
   const creations = getAllItems("creation", lang);
 
   const isEn = lang === "en";
-  const siteName = isEn ? SITE_NAME_EN : SITE_NAME_ZH;
   const description = isEn ? SITE_DESCRIPTION_EN : SITE_DESCRIPTION_ZH;
   const structuredData = [
     {
@@ -34,10 +32,10 @@ export default async function Index({ params }: { params: Promise<{ lang: string
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: siteName,
-      alternateName: isEn ? SITE_NAME_ZH : SITE_NAME_EN,
+      name: CMS_NAME,
+      alternateName: ["许嘉昭", "XUX"],
       description,
-      inLanguage: isEn ? "en" : "zh-CN",
+      inLanguage: ["en", "zh-CN"],
       publisher: { "@id": `${SITE_URL}/#person` },
     },
     {
@@ -47,7 +45,9 @@ export default async function Index({ params }: { params: Promise<{ lang: string
       name: "Jiazhao Xu",
       alternateName: "许嘉昭",
       url: SITE_URL,
-      jobTitle: isEn ? "Full-stack Designer" : "全栈设计师",
+      jobTitle: isEn ? "AI Product Designer & Builder" : "AI 产品设计师与开发者",
+      worksFor: { "@type": "Organization", name: "ONE2X", url: "https://www.one2x.ai/" },
+      alumniOf: { "@type": "CollegeOrUniversity", name: "ArtCenter College of Design" },
       description,
       sameAs: ["https://www.linkedin.com/in/xujiazhao/"],
       knowsAbout: isEn
@@ -58,6 +58,17 @@ export default async function Index({ params }: { params: Promise<{ lang: string
             "front-end development",
           ]
         : ["AI 产品设计", "UX/UI 设计", "产品策略", "前端开发"],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": `${SITE_URL}/${lang}#profile`,
+      url: `${SITE_URL}/${lang}`,
+      name: isEn ? "Jiazhao Xu — AI Product Designer & Builder" : "许嘉昭 — AI 产品设计与开发",
+      description,
+      inLanguage: isEn ? "en" : "zh-CN",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      mainEntity: { "@id": `${SITE_URL}/#person` },
     },
   ];
 

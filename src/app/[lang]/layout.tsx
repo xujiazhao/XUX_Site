@@ -57,7 +57,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(SITE_URL),
-    applicationName: title,
+    applicationName: CMS_NAME,
     title: {
       default: title,
       template: `%s | ${CMS_NAME}`,
@@ -73,7 +73,7 @@ export async function generateMetadata({
       locale: isEn ? "en_US" : "zh_CN",
       alternateLocale: isEn ? "zh_CN" : "en_US",
       url: `${SITE_URL}/${lang}`,
-      siteName: title,
+      siteName: CMS_NAME,
       title,
       description,
       images: HOME_OG_IMAGE_URL ? [HOME_OG_IMAGE_URL] : [],

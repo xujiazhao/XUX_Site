@@ -111,22 +111,30 @@ export function SelfIntro({ lang }: Props) {
           {isEn ? (
             <>
               <p className="mb-4">
-                I focus on integrating AI with software and hardware experiences to create intelligent and human-centered products. I’m driven by a results-oriented approach to design—turning creative insight into tangible business value and lasting impact.
+                I’m Jiazhao Xu (许嘉昭), an AI product designer and builder. I combine product strategy, UX/UI design, prototyping, and front-end development to turn ideas into working products. My full-stack approach connects design decisions with implementation and business outcomes.
               </p>
               <p className="mb-4">
-                I graduated from <Link href="/en/experience/artcenter-college-of-design" className="animated-weight-link underline">ArtCenter College of Design</Link> and have worked at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>. I am also an entrepreneur, <Link href="/en/experience/insead-business-school" className="animated-weight-link underline">educator</Link>, and <Link href="/en/creation/ppt-expert" className="animated-weight-link underline">PPT expert</Link>.
+                I’m currently a Product Manager for Medeo at <Link href="/en/experience/one2x" className="animated-weight-link underline">ONE2X</Link>, working on AI video creation. I graduated from <Link href="/en/experience/artcenter-college-of-design" className="animated-weight-link underline">ArtCenter College of Design</Link> and have worked at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>. I am also an entrepreneur, <Link href="/en/experience/insead-business-school" className="animated-weight-link underline">educator</Link>, and <Link href="/en/creation/ppt-expert" className="animated-weight-link underline">PPT expert</Link>.
               </p>
             </>
           ) : (
             <>
               <p className="mb-4">
-                我专注于融合AI与软硬件体验，打造智能且有温度的产品。以商业成果为导向，我致力于让设计在企业中创造真实价值与可衡量的影响力。
+                我是许嘉昭（Jiazhao Xu），一名 AI 产品设计师与开发者。我结合产品策略、UX/UI 设计、交互原型与前端开发，把想法做成可用的产品。对我来说，全栈意味着贯通设计、实现与商业价值。
               </p>
               <p className="mb-4">
-                我本科毕业于<Link href="/zh/experience/artcenter-college-of-design" className="animated-weight-link underline">艺术中心设计学院</Link>，曾在<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>工作。我同时也是一名创业者、<Link href="/zh/experience/insead-business-school" className="animated-weight-link underline">教育者</Link>和<Link href="/zh/creation/ppt-expert" className="animated-weight-link underline">PPT专家</Link>。
+                我目前在<Link href="/zh/experience/one2x" className="animated-weight-link underline">ONE2X</Link>担任 Medeo 产品经理，探索 AI 视频创作。我本科毕业于<Link href="/zh/experience/artcenter-college-of-design" className="animated-weight-link underline">艺术中心设计学院</Link>，曾在<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>工作。我同时也是一名创业者、<Link href="/zh/experience/insead-business-school" className="animated-weight-link underline">教育者</Link>和<Link href="/zh/creation/ppt-expert" className="animated-weight-link underline">PPT专家</Link>。
               </p>
             </>
           )}
+          <p className="mb-4">
+            {isEn
+              ? "Open to part-time projects, startup partnerships, and product collaborations — especially AI product design, UX/UI, and prototypes that bring an idea to life."
+              : "欢迎兼职项目、创业伙伴与产品合作，尤其是 AI 产品设计、UX/UI，以及将想法落地的原型开发。"}{" "}
+            <a href="mailto:hello@xujiazhao.com" className="animated-weight-link underline">
+              {isEn ? "Let’s talk." : "联系我聊聊。"}
+            </a>
+          </p>
         </div>
         <div className="grid grid-cols-4 md:inline-flex md:flex-nowrap gap-3 text-sm">
           <Link href={`/${lang}/resume`} className={CONTACT_ACTION_CLASS}>
