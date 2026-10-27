@@ -1,0 +1,18 @@
+Photographs used in the image relevance comparison
+License: Unsplash License (https://unsplash.com/license)
+Downloaded on 2026-10-03. Both source pages identify the photos as free
+to use under the Unsplash License. Photographer links appear with the demo.
+
+lecture-hall.webp
+Photographer: Fabio Sasso (@abduzeedo)
+Title: Empty lecture hall with tiered seating and projector screen
+Source: https://unsplash.com/photos/empty-lecture-hall-with-tiered-seating-and-projector-screen-L5GTAFIeKNA
+Image: https://images.unsplash.com/photo-1755995286639-0164e827640a
+Delivery: 1200 x 800 WebP; CSS crops the displayed photo to fit the slide.
+
+mountain-lake.webp
+Photographer: Luca Bravo (@lucabravo)
+Title: Photo of trees near body of water
+Source: https://unsplash.com/photos/photo-of-trees-near-body-of-water-WeFDiEDModQ
+Image: https://images.unsplash.com/photo-1489945796694-07eba0228bc7
+Delivery: 1200 x 800 WebP crop; CSS fits the photo within the slide.
