@@ -14,6 +14,7 @@ import { ChatWidget } from "@/app/_components/chat-widget";
 import { DocumentLanguage } from "@/app/_components/document-language";
 import { LanguageTransition } from "@/app/_components/language-transition";
 import { NavigationTransitionController } from "@/app/_components/page-loader";
+import { getPageAlternates } from "@/lib/seo";
 import { getLanguage, LANGUAGES } from "@/lib/i18n";
 
 export async function generateMetadata({
@@ -94,13 +95,7 @@ export async function generateMetadata({
         "max-video-preview": -1,
       },
     },
-    alternates: {
-      canonical: `${SITE_URL}/${lang}`,
-      languages: {
-        en: `${SITE_URL}/en`,
-        zh: `${SITE_URL}/zh`,
-      },
-    },
+    alternates: getPageAlternates(lang),
   };
 }
 

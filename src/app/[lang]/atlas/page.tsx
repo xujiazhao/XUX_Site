@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PersonalGlobeOverlay } from "@/app/_components/personal-globe-overlay";
 import { getLanguage } from "@/lib/i18n";
 import { getPersonalGlobeData } from "@/lib/personal-globe";
-import { SITE_URL } from "@/lib/constants";
+import { getPageAlternates, getPageSocialMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -20,13 +20,8 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: {
-      canonical: `${SITE_URL}/${lang}/atlas`,
-      languages: {
-        en: `${SITE_URL}/en/atlas`,
-        zh: `${SITE_URL}/zh/atlas`,
-      },
-    },
+    alternates: getPageAlternates(lang, "/atlas"),
+    ...getPageSocialMetadata({ lang, path: "/atlas", title, description }),
   };
 }
 

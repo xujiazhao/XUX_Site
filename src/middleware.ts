@@ -43,6 +43,6 @@ export const config = {
      * - assets (public folder)
      * - favicon (public folder)
      */
-    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|assets|favicon).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|og.png|robots.txt|sitemap.xml|assets|favicon).*)",
   ],
 };

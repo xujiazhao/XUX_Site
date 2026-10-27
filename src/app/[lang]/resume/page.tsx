@@ -2,6 +2,7 @@ import { getAllResumes } from "@resume/lib/resume-api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { ResumeViewer } from "@resume/components/resume-viewer";
 import type { Metadata } from "next";
+import { getPageAlternates, getPageSocialMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,11 +12,16 @@ export async function generateMetadata({
   const { lang } = await params;
   const isEn = lang === "en";
 
+  const title = isEn ? "Resume" : "简历";
+  const description = isEn
+    ? "Jiazhao Xu's resume – AI Experience Designer, Product Designer, and Product Manager"
+    : "许嘉昭的简历 – AI 体验设计师、产品设计师与产品经理";
+
   return {
-    title: isEn ? "Resume" : "简历",
-    description: isEn
-      ? "Jiazhao Xu's resume – AI Experience Designer, Product Designer, and Product Manager"
-      : "许嘉昭的简历 – AI 体验设计师、产品设计师与产品经理",
+    title,
+    description,
+    alternates: getPageAlternates(lang, "/resume"),
+    ...getPageSocialMetadata({ lang, path: "/resume", title, description }),
   };
 }
 
