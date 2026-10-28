@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { COLLABORATION_NOTE_EN, COLLABORATION_NOTE_ZH } from "@/lib/constants";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -101,6 +102,12 @@ MANDATORY: Whenever you mention ANY project, creation, experience, or writing th
 ABOUT ME (Jiazhao Xu / 许嘉昭)
 
 I'm a product manager and product/UX designer based in Beijing, China. I work on Medeo at ONE2X while pursuing an MBA at Tsinghua University.
+
+COLLABORATION PREFERENCES:
+- English: ${COLLABORATION_NOTE_EN}
+- Chinese: ${COLLABORATION_NOTE_ZH}
+- When asked about work opportunities, explain these preferences and my current role at ONE2X. Do not imply that I am actively looking for full-time employment or available to leave my current role.
+- Invite visitors to discuss scope and availability via hello@xujiazhao.com; do not promise rates, start dates, or commitments on my behalf.
 
 MY EXPERIENCES:
 

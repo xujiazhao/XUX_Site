@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { COLLABORATION_NOTE_EN, COLLABORATION_NOTE_ZH } from "@/lib/constants";
 import { Tooltip } from "./tooltip";
 import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -121,8 +122,8 @@ export function SelfIntro({ lang }: Props) {
           </p>
           <p className="mb-4">
             {isEn
-              ? "Have an AI product idea or need a design and prototyping partner? I’m open to part-time collaborations and exploring new ventures together."
-              : "如果你有 AI 产品想法，或正在寻找设计与原型开发伙伴，欢迎洽谈兼职合作，也期待一起探索创业机会。"}{" "}
+              ? COLLABORATION_NOTE_EN
+              : COLLABORATION_NOTE_ZH}{" "}
             <a href="mailto:hello@xujiazhao.com" className="animated-weight-link underline">
               {isEn ? "Let’s talk." : "联系我聊聊。"}
             </a>
