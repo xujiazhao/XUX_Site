@@ -26,7 +26,7 @@ label: "Product Manager"
 
 - Product Manager for Medeo, ONE2X’s AI video creation and editing product. Medeo lets users generate and refine videos through natural-language conversations for marketing ads, educational explainers, and animated shorts.
 
-### <img src="/assets/favicon/msft.svg" alt=""> Microsoft – Product Designer > Product Lead (DRI) <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
+### <img src="/assets/favicon/msft.svg" alt=""> Microsoft – Product Designer / Copilot Podcast Project Lead (DRI) <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
 
 - Initiated and led AI-driven product concepts from ideation to launch, translating user pain points and market trends into actionable requirements; collaborated across PM, engineering, and content teams in China, US, and India.
 - Combined human-centered design with strategic product thinking to create scalable AI features that improved user engagement and partner revenue.

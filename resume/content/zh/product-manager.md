@@ -26,7 +26,7 @@ label: "产品经理"
 
 - 担任 Medeo 产品经理。Medeo 是 ONE2X 旗下的 AI 视频创作与编辑产品，支持通过自然语言对话生成和修改视频，面向营销广告、知识讲解与动画短片等创作场景。
 
-### <img src="/assets/favicon/msft.svg" alt=""> 微软 – 产品设计师 > 产品负责人（DRI） <span class="resume-meta">北京, 2023.01 – 2026.06</span>
+### <img src="/assets/favicon/msft.svg" alt=""> 微软 – 产品设计师 / Copilot Podcast 项目负责人（DRI） <span class="resume-meta">北京, 2023.01 – 2026.06</span>
 
 - 从构思到上线发起并主导 AI 驱动的产品方案，将用户痛点和市场趋势转化为可执行的需求；与中国、美国、印度的 PM、工程和内容团队跨区域协作。
 - 将以人为中心的设计与战略性产品思维相结合，打造可扩展的 AI 功能，提升用户参与度和合作伙伴收入。

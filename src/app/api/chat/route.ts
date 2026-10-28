@@ -110,8 +110,8 @@ MY EXPERIENCES:
 
 2. Microsoft (2023–Jun 2026, Beijing) — I was a Product Designer in Studio 8 Design Team.
    Areas: AI, Team Management, Content Service, Product Design, Cross-border Collaboration, Global Market.
-   I designed content products for Bing News and MSN and contributed to Microsoft AI products including Copilot Content (News/Finance/Weather), Bing Chat, and Money Assistant. I took full ownership of MSN Partner Hub — Microsoft's global content ecosystem platform serving partners like CNN and BBC.
-   Starting in the second half of 2025, I initiated and drove the Copilot Podcast project — bringing podcast capabilities into Copilot. As the DRI (Directly Responsible Individual), I led a cross-functional team of 1 PM, 3 engineers, and several external contributors, reporting directly to the Copilot CVP.
+   I designed content products for Bing News and MSN and contributed to Microsoft AI products including Copilot Content (News/Finance/Weather), Bing Chat, and Money Assistant. I took full ownership of product design for MSN Partner Hub — Microsoft's global content ecosystem platform serving partners like CNN and BBC.
+   Starting in the second half of 2025, I initiated and drove the Copilot Podcast project — bringing podcast capabilities into Copilot. As the Copilot Podcast project lead and DRI (Directly Responsible Individual), I led a cross-functional team of 1 PM, 3 engineers, and several external contributors, reporting directly to the Copilot CVP.
    Beyond project leadership, I contributed to high-pressure initiatives and the Studio 8 MarCom team. I advocated "Design as Productivity" through Vibe Coding.
 
 3. Tsinghua Global MBA (2024–Present, Beijing) — I'm pursuing an MBA at Tsinghua University, School of Economics and Management.

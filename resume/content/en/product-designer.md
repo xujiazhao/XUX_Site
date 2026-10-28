@@ -26,16 +26,16 @@ label: "Full-Stack Designer"
 
 - Product Manager for Medeo, ONE2X’s AI video creation and editing product. Medeo lets users generate and refine videos through natural-language conversations for marketing ads, educational explainers, and animated shorts.
 
-### <img src="/assets/favicon/msft.svg" alt=""> Microsoft — Senior Product Designer / Product Lead of Copilot Podcast <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
+### <img src="/assets/favicon/msft.svg" alt=""> Microsoft — Senior Product Designer / Copilot Podcast Project Lead (DRI) <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
 
 - **Copilot Podcast:** Initiated and led the project from 0 to 1, bringing podcast capabilities into Microsoft Copilot. Managed a cross-functional team of 1 PM, 3 engineers, and external contributors, owning product roadmap, feature prioritization, and sprint planning, reporting directly to Copilot CVP.
-- Lead full-cycle product design for Microsoft's content ecosystem, spanning B2B and B2C from content onboarding to distribution, driving both user experience and platform revenue through design:
-    - **Copilot Content Experience Design:** Lead content design within Microsoft's AI product Copilot, covering news, finance, sports, and more. Explore how AI can improve content engagement and satisfaction while enriching the user experience.
-    - **Bing & MSN News Product Design:** Own core features of Bing News and MSN Feeds, including trending searches and breaking news; launched AI-driven innovations such as News Digest, significantly boosting user experience and platform revenue, helping the product surpass competitors globally.
-    - **Partner Ecosystem B2B Platform:** Design content distribution and management platforms, as well as AI content creation tools, for 3,000+ mid-to-large content partners globally. Content supply covers all Microsoft consumer products (Windows, Copilot, Edge, MSN, Bing).
-    - **Team Management & Design Efficiency:** Build and maintain cross-product design systems and delivery SOPs; manage cross-functional project teams coordinating PM, engineers, and designers to comprehensively improve team productivity and design delivery quality.
-- Contribute to Microsoft China design team Studio 8's communications, leading team brand building, internal/external outreach; including Peking University course collaboration and Microsoft Asia R&D Group annual event key visual design.
-- Drive Vibe Coding and various AI tools adoption within the design team, exploring new AI + Design workflows to boost design efficiency. Encourage designers to take on more PM responsibilities, expanding design's influence within the team. Simultaneously drive team tool and process optimization to holistically improve productivity and team well-being.
+- Led full-cycle product design for Microsoft's content ecosystem, spanning B2B and B2C from content onboarding to distribution, driving both user experience and platform revenue through design:
+    - **Copilot Content Experience Design:** Led content design within Microsoft's AI product Copilot, covering news, finance, sports, and more. Explored how AI could improve content engagement and satisfaction while enriching the user experience.
+    - **Bing & MSN News Product Design:** Owned core features of Bing News and MSN Feeds, including trending searches and breaking news; launched AI-driven innovations such as News Digest, significantly boosting user experience and platform revenue, helping the product surpass competitors globally.
+    - **Partner Ecosystem B2B Platform:** Designed content distribution and management platforms, as well as AI content creation tools, for 3,000+ mid-to-large content partners globally. Content supply covers all Microsoft consumer products (Windows, Copilot, Edge, MSN, Bing).
+    - **Team Management & Design Efficiency:** Built and maintained cross-product design systems and delivery SOPs; managed cross-functional project teams coordinating PM, engineers, and designers to comprehensively improve team productivity and design delivery quality.
+- Contributed to Microsoft China design team Studio 8's communications, leading team brand building, internal/external outreach; including Peking University course collaboration and Microsoft Asia R&D Group annual event key visual design.
+- Drove Vibe Coding and various AI tools adoption within the design team, exploring new AI + Design workflows to boost design efficiency. Encouraged designers to take on more PM responsibilities, expanding design's influence within the team. Also drove team tool and process optimization to holistically improve productivity and team well-being.
 
 ### <img src="/assets/favicon/aqua-icon.webp" alt=""> AQUA Exchange – Product, Design & Development <span class="resume-meta">[Parttime] Dec 2025 – Present</span>
 

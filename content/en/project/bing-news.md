@@ -12,7 +12,7 @@ favicon: "/assets/favicon/Bing icon.webp"
 
 Bing News was the first project I took over after joining Microsoft. It is an essential part of the Bing search engine. When users perform searches, all news-related modules and links are provided by our team.
 
-Although the search engine is a mature product, delivering quality news within it requires specialized expertise. Therefore, my daily work involves continuously optimizing and iterating on Bing News, with goals including achieving better ***Business growth (DAU)*** and ***User experience***.
+Although the search engine is a mature product, delivering quality news within it requires specialized expertise. At the time, my daily work involved continuously optimizing and iterating on Bing News, with goals including achieving better ***Business growth (DAU)*** and ***User experience***.
 
 ### Business Growth
 
@@ -26,7 +26,7 @@ Added "Top News" and "Explore more news" which overall increased the DAU of the 
 
 Changed the card swiping to a list view, making the reading experience more natural for users. Expanded the area for top news to further increase the DAU of the news module. Balanced the visual weight of each news item within the module.
 
-**Aug 2023 - Now (2024)**
+**Aug 2023 - 2024**
 
 Due to business growth pressure, I changed the news title color from black to "Blue Link" and moved the publisher logo before the news title. Added small image previews to “Explroe more news”, further increasing the DAU of the news module.
 
@@ -79,7 +79,7 @@ Fortunately, we can leverage the immense traffic of the search engine to conduct
 
 Bing News has very strict requirements for information authority and search neutrality. The principle of providing users with unbiased information is deeply ingrained in the hearts of every news professional. This principle has also changed me. 
 
-Over the past year of managing the news product, I have developed very healthy and beneficial information consumption habits. Perhaps you can do the same—turn off algorithmic personalized recommendations on all content platforms and explore a wider variety of information. As I mentioned at the beginning, I hope more people can break out of their information cocoons. For example, in the feature below, I designed a **"Related News"** function for all top stories, allowing users to access a dedicated page for comprehensive coverage.
+During the year I worked on Bing News, I developed very healthy and beneficial information consumption habits. Perhaps you can do the same—turn off algorithmic personalized recommendations on all content platforms and explore a wider variety of information. As I mentioned at the beginning, I hope more people can break out of their information cocoons. For example, in the feature below, I designed a **"Related News"** function for all top stories, allowing users to access a dedicated page for comprehensive coverage.
 
 ![](/assets/images/bing-news/bing-news-Untitled_6.webp)
 
