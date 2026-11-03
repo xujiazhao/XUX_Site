@@ -1,6 +1,6 @@
 ---
 title: "清华大学全球MBA"
-dateRange: "2024.9 - Now"
+dateRange: "2024.9 - 至今"
 intro: "经济管理学院"
 type: "硕士"
 area: ["工商管理硕士","多元化环境"]
