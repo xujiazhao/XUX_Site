@@ -1,4 +1,3 @@
-import { COLLABORATION_NOTE_EN, COLLABORATION_NOTE_ZH } from "@/lib/constants";
 import { getAllResumes } from "@resume/lib/resume-api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { ResumeViewer } from "@resume/components/resume-viewer";
@@ -46,17 +45,6 @@ export default async function ResumePage({
 
   return (
     <main className="resume-page" data-page-language={lang}>
-      <aside
-        aria-label={lang === "en" ? "Collaboration" : "合作意向"}
-        className="shrink-0 border-b border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
-      >
-        <p className="mx-auto max-w-[1200px] px-5 py-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
-          {lang === "en" ? COLLABORATION_NOTE_EN : COLLABORATION_NOTE_ZH}{" "}
-          <a href="mailto:hello@xujiazhao.com" className="underline">
-            {lang === "en" ? "Let’s talk." : "联系我聊聊。"}
-          </a>
-        </p>
-      </aside>
       <ResumeViewer
         variants={currentResumes}
         lang={lang}
