@@ -123,10 +123,7 @@ export function SelfIntro({ lang }: Props) {
           <p className="mb-4">
             {isEn
               ? COLLABORATION_NOTE_EN
-              : COLLABORATION_NOTE_ZH}{" "}
-            <a href="mailto:hello@xujiazhao.com" className="animated-weight-link underline">
-              {isEn ? "Let’s talk." : "联系我聊聊。"}
-            </a>
+              : COLLABORATION_NOTE_ZH}
           </p>
         </div>
         <div className="grid grid-cols-4 md:inline-flex md:flex-nowrap gap-3 text-sm">
