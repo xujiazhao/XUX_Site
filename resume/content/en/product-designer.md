@@ -26,7 +26,7 @@ label: "Full-Stack Designer"
 
 - Product Manager for Medeo, ONE2X’s AI video creation and editing product. Medeo lets users generate and refine videos through natural-language conversations for marketing ads, educational explainers, and animated shorts.
 
-### <img src="/assets/favicon/msft.svg" alt=""> Microsoft — Senior Product Designer / Copilot Podcast Project Lead (DRI) <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
+### <img src="/assets/favicon/msft.svg" alt=""> Microsoft — Sr. Product Designer / Copilot Podcast Lead <span class="resume-meta">Beijing, Jan 2023 – Jun 2026</span>
 
 - **Copilot Podcast:** Initiated and led the project from 0 to 1, bringing podcast capabilities into Microsoft Copilot. Managed a cross-functional team of 1 PM, 3 engineers, and external contributors, owning product roadmap, feature prioritization, and sprint planning, reporting directly to Copilot CVP.
 - Led full-cycle product design for Microsoft's content ecosystem, spanning B2B and B2C from content onboarding to distribution, driving both user experience and platform revenue through design:
