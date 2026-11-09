@@ -53,11 +53,13 @@ export default async function Index({ params }: { params: Promise<{ lang: string
       knowsAbout: isEn
         ? [
             "AI product design",
-            "UX/UI design",
+            "AI user experience design",
             "product strategy",
+            "interaction design",
+            "prototyping",
             "front-end development",
           ]
-        : ["AI 产品设计", "UX/UI 设计", "产品策略", "前端开发"],
+        : ["AI 产品设计", "AI 用户体验设计", "产品策略", "交互设计", "原型开发", "前端开发"],
     },
     {
       "@context": "https://schema.org",

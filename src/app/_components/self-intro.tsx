@@ -112,11 +112,11 @@ export function SelfIntro({ lang }: Props) {
           <p className="mb-4">
             {isEn ? (
               <>
-                I design and build AI products, from product strategy and UX/UI to prototypes and front-end development. I’m currently a Product Manager for Medeo at <Link href="/en/experience/one2x" className="animated-weight-link underline">ONE2X</Link>, with previous experience at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>.
+                I am an AI product designer and builder. I connect user needs with business goals to shape product direction, simplify complex experiences, and bring ideas to life. I’m currently a Product Manager for Medeo at <Link href="/en/experience/one2x" className="animated-weight-link underline">ONE2X</Link>, with previous experience at <Link href="/en/experience/microsoft" className="animated-weight-link underline">Microsoft</Link> and <Link href="/en/experience/ant-international" className="animated-weight-link underline">Ant International</Link>.
               </>
             ) : (
               <>
-                我是一名 AI 产品设计师与开发者，擅长从产品策略、UX/UI 到原型与前端实现。目前在<Link href="/zh/experience/one2x" className="animated-weight-link underline">ONE2X</Link>担任 Medeo 产品经理，曾就职于<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>。
+                我是一名 AI 产品设计师与开发者，擅长结合用户需求与商业目标判断产品方向、收敛体验，并推动落地。目前在<Link href="/zh/experience/one2x" className="animated-weight-link underline">ONE2X</Link>担任 Medeo 产品经理，曾就职于<Link href="/zh/experience/microsoft" className="animated-weight-link underline">微软</Link>与<Link href="/zh/experience/ant-international" className="animated-weight-link underline">蚂蚁国际</Link>。
               </>
             )}
           </p>

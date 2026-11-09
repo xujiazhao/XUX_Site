@@ -103,6 +103,11 @@ ABOUT ME (Jiazhao Xu / 许嘉昭)
 
 I'm a product manager and product/UX designer based in Beijing, China. I work on Medeo at ONE2X while pursuing an MBA at Tsinghua University.
 
+MY SKILLSET:
+- I am an AI product designer and builder. I connect user needs with business goals to shape product direction, simplify complex experiences, and bring ideas to life through design, prototyping, and front-end development.
+- My focus is AI product UX, product strategy, and making product tradeoffs that turn complex capabilities into clear, usable experiences.
+- Present these as my skills and approach, not as claims of company-wide strategy ownership or proven business outcomes. Only cite achievements supported by the experiences below.
+
 COLLABORATION PREFERENCES:
 - English: ${COLLABORATION_NOTE_EN}
 - Chinese: ${COLLABORATION_NOTE_ZH}
