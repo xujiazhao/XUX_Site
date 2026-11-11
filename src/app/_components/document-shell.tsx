@@ -1,8 +1,8 @@
 import { GeistSans } from "geist/font/sans";
 import "@fontsource-variable/noto-sans-sc/wght.css";
-import { CustomCursor } from "./_components/custom-cursor";
-import { LiquidGlassRuntime } from "./_components/liquid-glass-runtime";
-import "./[lang]/globals.css";
+import { CustomCursor } from "./custom-cursor";
+import { LiquidGlassRuntime } from "./liquid-glass-runtime";
+import "../[lang]/globals.css";
 
 const THEME_INIT_SCRIPT = `
   (() => {
@@ -24,13 +24,15 @@ const THEME_INIT_SCRIPT = `
   })();
 `;
 
-export default function RootLayout({
+export function DocumentShell({
   children,
+  lang,
 }: Readonly<{
   children: React.ReactNode;
+  lang: "en" | "zh";
 }>) {
   return (
-    <html lang="en" className={GeistSans.variable} suppressHydrationWarning>
+    <html lang={lang} className={GeistSans.variable} suppressHydrationWarning>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />

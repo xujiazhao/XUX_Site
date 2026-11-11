@@ -29,7 +29,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
   }
 
-  return NextResponse.next();
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-site-language", pathname.split("/")[1]);
+  return NextResponse.next({ request: { headers: requestHeaders } });
 }
 
 export const config = {

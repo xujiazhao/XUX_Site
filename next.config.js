@@ -2,6 +2,8 @@ const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
 /** @type {import('next').NextConfig} */
 const sharedConfig = {
+  // A localized root layout needs a standalone document for unmatched URLs.
+  experimental: { globalNotFound: true },
   images: {
     remotePatterns: [],
   },

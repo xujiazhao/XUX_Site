@@ -11,7 +11,7 @@ import {
 import type { Metadata } from "next";
 import { SiteHeader } from "@/app/_components/site-header";
 import { ChatWidget } from "@/app/_components/chat-widget";
-import { DocumentLanguage } from "@/app/_components/document-language";
+import { DocumentShell } from "@/app/_components/document-shell";
 import { LanguageTransition } from "@/app/_components/language-transition";
 import { NavigationTransitionController } from "@/app/_components/page-loader";
 import { getPageAlternates } from "@/lib/seo";
@@ -114,8 +114,7 @@ export default async function RootLayout({
   const lang = getLanguage(requestedLanguage);
 
   return (
-    <>
-      <DocumentLanguage lang={lang} />
+    <DocumentShell lang={lang}>
       <SiteHeader lang={lang} />
       <NavigationTransitionController />
       <LanguageTransition lang={lang}>
@@ -125,6 +124,6 @@ export default async function RootLayout({
         <Footer lang={lang} />
         <ChatWidget lang={lang} />
       </LanguageTransition>
-    </>
+    </DocumentShell>
   );
 }
