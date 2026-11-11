@@ -32,6 +32,8 @@ export function WritingSection({ writings, lang, isEn }: Props) {
       key={post.slug}
       href={`/${lang}/writing/${post.slug}`}
       data-collapse-base={isExtra ? undefined : ""}
+      style={isExtra && !expanded ? { display: "none" } : undefined}
+      inert={isExtra && !contentVisible}
       className={`group col-span-3 grid grid-cols-subgrid items-baseline border-b border-neutral-100 py-2 transition-[color,background-color,opacity,transform] duration-300 hover:bg-neutral-100 motion-reduce:transition-none dark:border-neutral-800 dark:hover:bg-neutral-900 ${
         isExtra
           ? contentVisible
@@ -67,7 +69,7 @@ export function WritingSection({ writings, lang, isEn }: Props) {
         style={{ gridTemplateColumns: '1fr auto auto', columnGap: '0.5rem' }}
       >
         {visible.map((post) => renderItem(post))}
-        {expanded && extra.map((post) => renderItem(post, true))}
+        {extra.map((post) => renderItem(post, true))}
       </div>
       {extra.length > 0 && (
         <>

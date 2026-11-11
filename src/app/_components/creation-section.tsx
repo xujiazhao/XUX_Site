@@ -76,9 +76,11 @@ export function CreationSection({ creations, lang, isEn }: Props) {
         className="homepage-media-breakout homepage-creation-grid grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4"
       >
         {nonArchive.map((post) => renderCard(post))}
-        {showArchive && archive.map((post) => (
+        {archive.map((post) => (
           <div
             key={post.slug}
+            style={!showArchive ? { display: "none" } : undefined}
+            inert={!archiveVisible}
             className={`transition-[opacity,transform] duration-300 ease-out motion-reduce:transition-none ${
               archiveVisible
                 ? "translate-y-0 opacity-100"
