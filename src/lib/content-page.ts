@@ -13,6 +13,13 @@ const COLLECTION_LABELS: Record<ContentCollection, string> = {
   writing: "Writing",
 };
 
+const COLLECTION_LABELS_ZH: Record<ContentCollection, string> = {
+  creation: "创作",
+  experience: "经历",
+  project: "项目",
+  writing: "写作",
+};
+
 export function getContentMetadata(
   collection: ContentCollection,
   slug: string,
@@ -24,7 +31,9 @@ export function getContentMetadata(
   const description =
     post.intro ||
     post.excerpt ||
-    `${post.title} – ${COLLECTION_LABELS[collection]} by ${CMS_NAME}`;
+    (lang === "zh"
+      ? `${post.title}｜许嘉昭的${COLLECTION_LABELS_ZH[collection]}`
+      : `${post.title} – ${COLLECTION_LABELS[collection]} by ${CMS_NAME}`);
 
   const path = `/${collection}/${post.slug}`;
   const availableLanguages = LANGUAGES.filter((language) =>
