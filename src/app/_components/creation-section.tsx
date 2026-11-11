@@ -44,6 +44,7 @@ export function CreationSection({ creations, lang, isEn }: Props) {
           <CoverImage
             src={post.coverImage || post.firstImage || ""}
             alt={post.title}
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
           />
         )}
         <div className="homepage-media-caption">

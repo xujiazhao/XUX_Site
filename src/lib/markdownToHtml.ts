@@ -125,10 +125,15 @@ export default async function markdownToHtml(
   // loading surface before hydration. Preserve intentionally small inline
   // images such as icons and emojis without a wrapper.
   if (mediaSkeleton) {
+    let imageIndex = 0;
     htmlStr = htmlStr.replace(/<img\b[^>]*>/g, (imageTag) => {
       const style = imageTag.match(/\sstyle="([^"]*)"/i)?.[1] || "";
       const styledWidth = style.match(/(?:^|;)\s*width\s*:\s*(\d+(?:\.\d+)?)px/i);
       if (styledWidth && Number(styledWidth[1]) < 80) return imageTag;
+      // Keep the first content image eager; defer subsequent gallery images.
+      if (imageIndex++ > 0 && !/\sloading\s*=/i.test(imageTag)) {
+        imageTag = imageTag.replace(/^<img\b/, '<img loading="lazy"');
+      }
       return `<span class="media-skeleton-wrapper">${imageTag}</span>`;
     });
   }

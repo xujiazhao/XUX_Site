@@ -59,6 +59,8 @@ export function ExperienceGrid({ experiences, lang, isEn, icon }: Props) {
               <img
                 src={exp.favicon}
                 alt=""
+                width={16}
+                height={16}
                 className={`w-4 h-4 flex-shrink-0 ${exp.favicon === "/assets/favicon/one2x.svg" ? "dark:invert" : ""}`}
               />
             )}

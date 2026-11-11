@@ -110,7 +110,7 @@ export default async function Index({ params }: { params: Promise<{ lang: string
               return (
                 <Link key={post.slug} href={href} className="group block">
                   {post.coverImage ? (
-                    <CoverImage src={post.coverImage} alt={post.title} />
+                    <CoverImage src={post.coverImage} alt={post.title} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
                   ) : (
                     <div className="overflow-hidden rounded-[24px] sm:rounded-[48px]">
                       <div className="aspect-video w-full bg-neutral-100 dark:bg-neutral-900" />
@@ -122,6 +122,9 @@ export default async function Index({ params }: { params: Promise<{ lang: string
                         <img
                           src={post.favicon}
                           alt=""
+                          loading="lazy"
+                          width={16}
+                          height={16}
                           className={`h-4 w-4 flex-shrink-0 ${
                             post.favicon.includes("/appleicon.") ? "dark:invert" : ""
                           }`}
