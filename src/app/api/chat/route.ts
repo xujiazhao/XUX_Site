@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COLLABORATION_NOTE_EN, COLLABORATION_NOTE_ZH } from "@/lib/constants";
+import { COLLABORATION_NOTE_EN, COLLABORATION_NOTE_ZH, SITE_URL } from "@/lib/constants";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -19,13 +19,13 @@ CURRENT CONVERSATION CONTEXT:
 - You do not have long-term memory across a page refresh, a closed chat, or a new browser session. Only make this distinction when the visitor specifically asks about memory beyond the current conversation.
 
 When mentioning a specific project, creation, experience, or writing, you MUST include a link to it on my website using markdown link format: [标题](url). NEVER output a bare URL — EVERY URL must be wrapped as [readable title](url). Use the visitor's language to determine both the URL prefix AND the link text language:
-- English visitor → English title, English URL: https://xux.ai/en/{category}/{slug}
-- Chinese visitor → Chinese title, Chinese URL: https://xux.ai/zh/{category}/{slug}
+- English visitor → English title, English URL: ${SITE_URL}/en/{category}/{slug}
+- Chinese visitor → Chinese title, Chinese URL: ${SITE_URL}/zh/{category}/{slug}
 
 STRICT RULE: Match the link text language to the conversation language. When responding in English, the link text MUST be in English. When responding in Chinese, the link text MUST be in Chinese. NEVER mix languages in link text.
 
-Example (English): Check out my [Tiptoeing China Branding Design](https://xux.ai/en/creation/tiptoeing-china) project.
-Example (Chinese): 你可以看看我的[神州散闻品牌设计](https://xux.ai/zh/creation/tiptoeing-china)项目。
+Example (English): Check out my [Tiptoeing China Branding Design](${SITE_URL}/en/creation/tiptoeing-china) project.
+Example (Chinese): 你可以看看我的[神州散闻品牌设计](${SITE_URL}/zh/creation/tiptoeing-china)项目。
 
 ENGLISH TITLE REFERENCE (use these when responding in English):
 - project/copilot-content-ecosystem → Copilot Content Ecosystem

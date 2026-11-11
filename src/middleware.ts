@@ -26,7 +26,12 @@ export function middleware(request: NextRequest) {
     const prefersChinese = /zh/i.test(acceptLanguage.split(",")[0]);
     const locale = prefersChinese ? "zh" : DEFAULT_LANGUAGE;
 
-    return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
+    const destination = request.nextUrl.clone();
+    destination.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+    // Language negotiation stays temporary; go straight to the canonical path.
+    const response = NextResponse.redirect(destination);
+    response.headers.set("Vary", "Accept-Language");
+    return response;
   }
 
   const requestHeaders = new Headers(request.headers);
